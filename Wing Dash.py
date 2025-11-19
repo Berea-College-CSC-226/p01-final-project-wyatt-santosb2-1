@@ -23,7 +23,8 @@ window = Tk()
 window.title("Wing Dash")
 canvas = Canvas(window,width=400,height=600)
 canvas.pack()
-
+Bird_speed = 2
+Pipe_colors = ["green"]
 
 
 class Bird:

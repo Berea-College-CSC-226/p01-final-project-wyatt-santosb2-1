@@ -2,8 +2,8 @@
 
 ## Instructions
 
-️Exclamation Marks ❗️indicate action items; you should remove these emoji as you complete/update the items which 
-  they accompany. (This means that your final README should have no ❗️in it!)
+️Exclamation Marks ️indicate action items; you should remove these emoji as you complete/update the items which 
+  they accompany. (This means that your final README should have no ️in it!)
 
 ️**Author(s)**: Wyatt McQueen, Bernave Santos
 
@@ -47,7 +47,7 @@ and describe how you integrated the ideas or code into your program. This includ
 helped you, AI tools you've used, and any other resources that are not solely your own contribution. Update this 
 section as you go. DO NOT forget about it!
 
-Chat Gpt, T12-T8 & HW 10-9
+Chat Gpt, T12-T8 & HW 10-9, https://www.w3resource.com/python-exercises/tkinter/python-tkinter-canvas-and-graphics-exercise-10.php?utm_source=chatgpt.com,
 ---
 
 ## Milestone 2: Code Setup and Issue Queue

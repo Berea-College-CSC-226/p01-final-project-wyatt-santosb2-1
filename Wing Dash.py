@@ -28,18 +28,32 @@ Pipe_colors = ["green"]
 
 
 class Bird:
-    def __init__(self,canvas,width,height):
+    def __init__(self,canvas,x,y):
         self.canvas = canvas
-        self.width = width
-        self.height = height
+        self.x = x
+        self.y = y
+        self.gravity = 1.2
+        self.fly = -20
+        self.velocity = 0
+
+        self.image = PhotoImage(file="Flappy-Bird-PNG-Pic.png")
+
+        self.id = canvas.create_image(self.x,self.y,image=self.image,anchor=NW)
+
     def jump(self):
-        pass
+        self.velocity = self.fly
+
 
     def draw(self):
         pass
 
+
     def move(self):
-        pass
+        self.velocity += self.gravity
+        self.y += self.velocity
+
+        self.canvas.move(self.id,0,self.velocity)
+
 
 class Pipe:
     def __init__(self,canvas,width,height):
@@ -58,6 +72,7 @@ class Game:
         self.canvas = canvas
         self.width = width
         self.height = height
+        self.bird = Bird(canvas,50,250)
 
     def draw_background(self):
         self.canvas.create_rectangle(0,0,self.width,self.height,fill="skyblue",outline="")
@@ -78,8 +93,12 @@ class Game:
         pass
 
     def run_game(self):
+        self.bird.move()
+        self.canvas.after(20,self.run_game)
         pass
 
 game = Game(canvas,400,600)
 game.draw()
+window.bind("<space>",lambda e: game.bird.jump())
+game.run_game()
 window.mainloop()

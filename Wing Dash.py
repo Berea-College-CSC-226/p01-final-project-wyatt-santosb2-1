@@ -36,7 +36,7 @@ class Bird:
         self.fly = -20
         self.velocity = 0
 
-        self.image = PhotoImage(file="Flappy-Bird-PNG-Pic.png")
+        self.image = PhotoImage(file="image/Flappy-Bird-PNG")
 
         self.id = canvas.create_image(self.x,self.y,image=self.image,anchor=NW)
 

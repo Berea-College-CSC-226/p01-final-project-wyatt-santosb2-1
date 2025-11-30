@@ -31,10 +31,24 @@ class Bird(pygame.sprite.Sprite):
     def draw(self,surface):
         surface.blit(self.image,self.rect)
 
-    class Pipe:
-        def __init__(self,x,y):
-            self.x = x
+class Pipe:
+    def __init__(self,x,gap_y,gap_height=150):
+        self.x = x
+        self.width = 50
 
+        self.gap_y = gap_y
+        self.gap_height = gap_height
+
+        self.top_colum = pygame.Rect(x,0,self.width,self.gap_height)
+
+        self.bottom_colum = pygame.Rect(x,0,self.width,self.gap_height)
+
+
+        self.speed = 3
+    def move(self):
+        pass
+    def draw(self,surface):
+        pass
 
 def main():
     clock = pygame.time.Clock()
@@ -52,6 +66,10 @@ def main():
                 if event.key == pygame.K_SPACE:
                         bird.jump()
         bird.move()
+        if bird.rect.bottom >= height:
+            bird.rect.bottom = height
+
+
 
         window.fill(sky)
         bird.draw(window)

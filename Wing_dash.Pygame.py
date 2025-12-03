@@ -1,5 +1,6 @@
 import pygame
 import sys
+import random
 
 width,height = 400,600
 window = pygame.display.set_mode((width,height))
@@ -32,27 +33,32 @@ class Bird(pygame.sprite.Sprite):
         surface.blit(self.image,self.rect)
 
 class Pipe:
-    def __init__(self,x,gap_y,gap_height=150):
-        self.x = x
-        self.width = 50
-
-        self.gap_y = gap_y
-        self.gap_height = gap_height
-
-        self.top_colum = pygame.Rect(x,0,self.width,self.gap_height)
-
-        self.bottom_colum = pygame.Rect(x,0,self.width,self.gap_height)
+    def __init__(self,x,y,flipped = False):
+        super().__init__()
+        self.flipped = flipped
 
 
+        self.colum = pygame.image.load("image/Bottom-Pipe").convert_alpha()
+        self.colum = pygame.transform.scale(self.colum,(60,300))
+
+        if self.flipped:
+            self.colum = pygame.transform.flip(self.colum,False,True)
+
+        self.rect = self.colum.get_rect()
+        self.rect.top = (x,y)
         self.speed = 3
+
     def move(self):
-        pass
+        self.rect.x-= self.speed
     def draw(self,surface):
-        pass
+        surface.blit(self.colum,self.rect)
 
 def main():
     clock = pygame.time.Clock()
     bird = Bird(50,250)
+
+    pipes = []
+    spawn_time = 0
 
     while True:
         clock.tick(60)
@@ -70,9 +76,18 @@ def main():
             bird.rect.bottom = height
 
 
+        spawn_time += 1
+        if spawn_time > 72:
+            gap = random.randrange(150,450)
+            pipes.append(Pipe(400,gap + 150,flipped = False))
+            pipes.append(Pipe(400,gap - 300,flipped = True))
+            spawn_time = 0
 
         window.fill(sky)
         bird.draw(window)
+
+
+
 
         pygame.display.update()
 

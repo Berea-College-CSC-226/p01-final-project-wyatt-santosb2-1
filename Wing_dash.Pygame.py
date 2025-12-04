@@ -38,7 +38,7 @@ class Pipe:
         self.flipped = flipped
 
 
-        self.colum = pygame.image.load("image/Bottom-Pipe").convert_alpha()
+        self.colum = pygame.image.load("image/Bottom pipe.png ").convert_alpha()
         self.colum = pygame.transform.scale(self.colum,(60,300))
 
         if self.flipped:
@@ -87,7 +87,9 @@ def main():
         bird.draw(window)
 
 
-
+         for pipe in pipes:
+            pipe.move( )
+            pipe.draw(window)
 
         pygame.display.update()
 

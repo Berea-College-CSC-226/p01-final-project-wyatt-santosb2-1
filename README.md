@@ -27,7 +27,7 @@
     README. You can do this by saving an image in the repository and linking to it. See the sample CRC card below - 
     and REPLACE it with your own:
   
-![Don't leave me in your README!](image/![CRC1.jpg](image/CRC1.jpg)"Image of CRC card as an example. Upload your CRC card(s) in place of this one. ")
+(image/![CRC2.jpg](image/CRC2.jpg)"Image of CRC card as an example. Upload your CRC card(s) in place of this one. ")
 
 **Branches**: This project will **require** effective use of git. 
 
@@ -58,7 +58,11 @@ Chat Gpt, T12-T8 & HW 10-9, https://www.w3resource.com/python-exercises/tkinter/
 What has surprised you so far? Describe your general feelings. Be honest with yourself; this section is for you, not me.
 
 ```
-    **Replace this text with your reflection
+What we have done so far is start on the code and then found a way to do it better and easyer. So we doing it that way because it makes
+it easyer to read and keep track of where we are. We are feeling a little behind and ahead at the same time.
+We are worried about getting it all funtunal and easy to read and talk about. The thing that has surprised us so far
+is how we are using a lot of what we did and used in class. Our general feelings on this section for us not me is ok but there
+is a lot of stress as this is our final project..
 ```
 
 ---
@@ -83,10 +87,16 @@ Indicate what percentage of the project you have left to complete and how confid
 
 ## Milestone 4: Final Code, Presentation, Demo
 
-### ❗User Instructions
-
-❗In a paragraph, explain how to use your program. Assume the user is starting just after they hit the "Run" button 
-in PyCharm. 
+        This program creates a simple Flappy-Bird–style game using the Python library pygame. It starts
+    by setting up a 400×600 game window with a light-blue background and loads a small bird image 
+    that the player controls. The bird has gravity pulling it downward & a jump force that 
+    pushes it upward whenever the player presses the space bar. Each frame, 
+    the bird’s velocity changes because of gravity, causing it to fall unless it jumps. 
+    The game also generates a top or bottom pipes at random; one pipe is upright and the other is 
+    flipped upside-down to form a gap the bird must fly through. These pipes move from right to left across 
+    the screen. Inside the main game loop, the program handles key presses, updates the bird’s movement, 
+    spawns new pipes, draws the graphics, & updates the display 60 times per second. When the loop starts, 
+    the game runs continuously until the window is closed or the player toutches a pipe.
 
 ### ❗Errors and Constraints
 

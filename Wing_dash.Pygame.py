@@ -1,12 +1,12 @@
 import pygame
 import sys
 import random
-
+#screen size
 pygame.init()
 width,height = 400,600
 window = pygame.display.set_mode((width,height))
 pygame.display.set_caption('Wing Dash')
-
+#background
 sky = "lightblue"
 pipe_height = 500
 score = 0
@@ -16,16 +16,16 @@ class Bird(pygame.sprite.Sprite):
         super().__init__()
 
 
-
+#image loader
         self.image = pygame.image.load("image/Flappy-Bird-PNG").convert_alpha()
         self.image = pygame.transform.scale(self.image,(40,40))
         self.rect = self.image.get_rect()
         self.rect.topleft = (x,y)
-
+#player gravity
         self.gravity = .8
         self.jump_force = -10
         self.velocity = 0
-
+#player movement
     def jump(self):
         self.velocity = self.jump_force
 
@@ -34,18 +34,18 @@ class Bird(pygame.sprite.Sprite):
         self.rect.y += self.velocity
         if self.rect.bottom >= height:
             self.rect.bottom = height
-
+#creats player
     def draw(self,surface):
         surface.blit(self.image,self.rect)
-
+#Obsticals and image insert.
 class Pipe:
     def __init__(self,x,y,flipped = False):
         self.flipped = flipped
 
-
+#Bottom pip
         self.colum = pygame.image.load("image/Bottom pipe.png").convert_alpha()
         self.colum = pygame.transform.scale(self.colum,(60,pipe_height))
-
+#Inverted top pip
         if self.flipped:
             self.colum = pygame.transform.flip(self.colum,False,True)
 
@@ -53,14 +53,14 @@ class Pipe:
         self.rect.topleft = (x,y)
         self.speed = 3
         self.scored = False
-
+#Obsticals movement
     def move(self):
         self.rect.x-= self.speed
     def draw(self,surface):
         surface.blit(self.colum,self.rect)
     def check_collision(self,bird_rect):
         return self.rect.colliderect(bird_rect)
-
+#score counter
 def main():
     global score
     clock = pygame.time.Clock()
@@ -68,7 +68,7 @@ def main():
     pipes = []
     spawn_time = 0
     font = pygame.font.SysFont( None, 30)
-
+#Timer
     while True:
         clock.tick(60)
 
@@ -81,19 +81,19 @@ def main():
                 bird.jump()
         bird.move()
 
-
+#Pip gap randomizer
         spawn_time += 1
         if spawn_time > 72:
             gap_center = random.randrange(-50,450)
             gap_size = 150
-
+#Pip checking
             bottom_y = gap_center + (gap_size // 2)
             top_y = gap_center - (gap_size // 2) - 30
-
+#Pip locations
             pipes.append(Pipe(400,bottom_y + 150,flipped = False))
             pipes.append(Pipe(400,top_y - 300,flipped = True))
             spawn_time = 0
-
+#pip counting
         for pipe in pipes:
             pipe.move()
             if pipe.check_collision(bird.rect):
@@ -105,7 +105,7 @@ def main():
                 pipe.scored = True
 
 
-
+#Window background and colores
         window.fill(sky)
         bird.draw(window)
         for pipe in pipes:

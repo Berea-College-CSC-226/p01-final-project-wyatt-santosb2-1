@@ -59,9 +59,9 @@ but helped a little a bit.
 
 ## Milestone 2: Code Setup and Issue Queue
 
-❗Most importantly, keep your issue queue up to date, and focus on your code. 🙃
+Most importantly, keep your issue queue up to date, and focus on your code. 🙃
 
-❗Reflect on what you’ve done so far. How’s it going? Are you feeling behind/ahead? What are you worried about? 
+Reflect on what you’ve done so far. How’s it going? Are you feeling behind/ahead? What are you worried about? 
 What has surprised you so far? Describe your general feelings. Be honest with yourself; this section is for you, not me.
 
 ```
@@ -123,24 +123,24 @@ Each partner should write three to four well-written paragraphs address the foll
 
 ```
     Partner 1: We picked this project because we both liked Flappy Bird and we wanted to try making something that actually moved on the screen instead of just printing text in the console. 
-At first it seemed pretty simple, like “just make the bird jump,” but once we started adding gravity and images it got a little more tricky. 
-Still, it felt fun to make something that looks sort of like a real game and not just code. 
-We also liked the idea of learning how sprites and classes worked in Pygame since we didn’t really understand them at first.
+    At first it seemed pretty simple, like “just make the bird jump,” but once we started adding gravity and images it got a little more tricky. 
+    Still, it felt fun to make something that looks sort of like a real game and not just code. 
+    We also liked the idea of learning how sprites and classes worked in Pygame since we didn’t really understand them at first.
 
-Our final project is kinda close to what we thought in the beginning, but not exactly. 
-We planned to have working pipes, scoring, and maybe sounds, but we didn’t have enough time to finish all of that. 
-The bird movement and the jumping mechanic match our original idea though, so that part turned out good. 
-A lot of our first design was more like “wishfull thinking,” and when we actually started coding we relized some things where harder then we expected.
-Still, the general feel of a Flappy Bird style game is pretty much there.
+    Our final project is kinda close to what we thought in the beginning, but not exactly. 
+    We planned to have working pipes, scoring, and maybe sounds, but we didn’t have enough time to finish all of that. 
+    The bird movement and the jumping mechanic match our original idea though, so that part turned out good. 
+    A lot of our first design was more like “wishfull thinking,” and when we actually started coding we relized some things where harder then we expected.
+    Still, the general feel of a Flappy Bird style game is pretty much there.
 
-The hardest part was getting the pipes to spawn right and flip correctly. 
-We kept messing up the rectangle positions and the flipping code, and sometimes the pipes would appear halfway off the screen or just not show up at all. 
-Another thing that was kinda confusing was figuring out how gravity, jump force, and velocity should work together so the bird didn’t fly too fast or fall like a rock.
-We definatly learned a lot about troubleshooting and testing things little by little instead of trying to fix everything at once.
+    The hardest part was getting the pipes to spawn right and flip correctly. 
+    We kept messing up the rectangle positions and the flipping code, and sometimes the pipes would appear halfway off the screen or just not show up at all. 
+    Another thing that was kinda confusing was figuring out how gravity, jump force, and velocity should work together so the bird didn’t fly too fast or fall like a rock.
+    We definatly learned a lot about troubleshooting and testing things little by little instead of trying to fix everything at once.
 
-If we did this again, we would probaly start with a more organized plan and get collision detection working earlier. 
-We also would test smaller pieces of the game instead of adding a bunch of code and hoping it worked the first try. 
-Working with my partner went pretty well overall because we both understood different parts of the project and helped each other out.
+    If we did this again, we would probaly start with a more organized plan and get collision detection working earlier. 
+    We also would test smaller pieces of the game instead of adding a bunch of code and hoping it worked the first try. 
+    Working with my partner went pretty well overall because we both understood different parts of the project and helped each other out.
 ```
 
 ```

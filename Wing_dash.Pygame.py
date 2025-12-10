@@ -1,12 +1,12 @@
 import pygame
 import sys
 import random
-
+#screen size
 pygame.init()
 width,height = 400,600
 window = pygame.display.set_mode((width,height))
 pygame.display.set_caption('Wing Dash')
-
+#background
 sky = "lightblue"
 pipe_height = 500
 score = 0
@@ -25,7 +25,7 @@ class Bird(pygame.sprite.Sprite):
         self.gravity = .8
         self.jump_force = -10
         self.velocity = 0
-
+#player movement and effects
     def jump(self):
         self.velocity = self.jump_force
 
@@ -37,7 +37,7 @@ class Bird(pygame.sprite.Sprite):
 
     def draw(self,surface):
         surface.blit(self.image,self.rect)
-
+#Obsticals
 class Pipe:
     def __init__(self,x,y,flipped = False):
         self.flipped = flipped
@@ -53,7 +53,7 @@ class Pipe:
         self.rect.topleft = (x,y)
         self.speed = 3
         self.scored = False
-
+#Obsticals movement
     def move(self):
         self.rect.x-= self.speed
     def draw(self,surface):
@@ -68,7 +68,7 @@ def main():
     pipes = []
     spawn_time = 0
     font = pygame.font.SysFont( None, 30)
-
+#Timer
     while True:
         clock.tick(60)
 

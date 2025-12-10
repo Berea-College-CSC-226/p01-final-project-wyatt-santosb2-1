@@ -47,7 +47,9 @@ and describe how you integrated the ideas or code into your program. This includ
 helped you, AI tools you've used, and any other resources that are not solely your own contribution. Update this 
 section as you go. DO NOT forget about it!
 
-Chat Gpt, T12-T8 & HW 10-9, https://www.w3resource.com/python-exercises/tkinter/python-tkinter-canvas-and-graphics-exercise-10.php?utm_source=chatgpt.com,
+Chat Gpt, T12-T8 & HW 10-9, https://www.w3resource.com/python-exercises/tkinter/python-tkinter-canvas-and-graphics-exercise-10.php?utm,
+https://www.pygame.org/docs/ ,https://www.pygame.org/wiki/tutorials, https://www.geeksforgeeks.org/python/introduction-to-pygame/ , 
+https://inventwithpython.com/pygame/ , https://github.com/sourabhv/FlapPyBird?utm_source , 
 ---
 
 ## Milestone 2: Code Setup and Issue Queue
@@ -137,7 +139,14 @@ Working with my partner went pretty well overall because we both understood diff
 ```
 
 ```
-    Partner 2: **Replace this with your reflection
+    Partner 2: I chose this project because I grew up playing Flappy Bird and thought it would be fun and easy to make 
+    my own version. My final project stayed close to my first design because I kept the same ideas for the classes and 
+    functions, even though I had to restart. I learned a lot about how classes work, how to look for the right 
+    resources, and the difference between tkinter and pygame. The hardest part was figuring out how everything worked 
+    and having to look through many sources just to understand small things. If I could do this again, I would spend 
+    more time learning the tools first so I would not have to restart so much. Working with my partner was both good 
+    and hard because I understood his situation, but it still put a lot on me during finals, even though he is helping 
+    more now and that makes things easier. 
 ```
 
 ---

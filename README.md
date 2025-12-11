@@ -33,7 +33,12 @@ section as you go. DO NOT forget about it!
 
 Chat Gpt, T12-T8 & HW 10-9, https://www.w3resource.com/python-exercises/tkinter/python-tkinter-canvas-and-graphics-exercise-10.php?utm,
 https://www.pygame.org/docs/ ,https://www.pygame.org/wiki/tutorials, https://www.geeksforgeeks.org/python/introduction-to-pygame/ , 
-https://inventwithpython.com/pygame/ , https://github.com/sourabhv/FlapPyBird?utm_source , 
+https://inventwithpython.com/pygame/ , https://github.com/sourabhv/FlapPyBird?utm_source , https://www.tutorialspoint.com/python/flappy_bird_game_using_pygame_in_python.htm
+,https://thepythoncode.com/article/make-a-flappy-bird-game-python
+(Bernave) I used many of these sources as an idea for the main function. Putting it all together was the hardest part,
+so I used other examples. Also looked at many GitHub ones as well but the downside is theirs were more complex
+but helped a little a bit.
+
 ---
 
 ## Milestone 2: Code Setup and Issue Queue
